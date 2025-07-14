@@ -7,10 +7,17 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-gray-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-orange-500 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-black text-white py-20">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0">
+          <img 
+            src="/img/123e81bf-c7ec-4c65-9d61-468b62eb0cd5.jpg" 
+            alt="nanoCAD Business Dinner" 
+            className="w-full h-full object-cover opacity-30"
+          />
+        </div>
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
             Бизнес-ужин nanoCAD
@@ -32,7 +39,7 @@ const Index = () => {
               <span>18:00 - 22:00</span>
             </div>
           </div>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold animate-scale-in" style={{animationDelay: '0.6s'}}>
+          <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-8 py-4 text-lg font-semibold animate-scale-in" style={{animationDelay: '0.6s'}}>
             Зарегистрироваться
           </Button>
         </div>
@@ -51,8 +58,8 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-lg transition-shadow duration-300 hover-scale">
               <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Layers" size={32} className="text-blue-600" />
+                <div className="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Layers" size={32} className="text-sky-600" />
                 </div>
                 <CardTitle className="text-xl">2D/3D Проектирование</CardTitle>
               </CardHeader>
@@ -65,8 +72,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow duration-300 hover-scale">
               <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Users" size={32} className="text-orange-600" />
+                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Users" size={32} className="text-gray-800" />
                 </div>
                 <CardTitle className="text-xl">Командная работа</CardTitle>
               </CardHeader>
@@ -79,8 +86,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow duration-300 hover-scale">
               <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Zap" size={32} className="text-green-600" />
+                <div className="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Zap" size={32} className="text-sky-600" />
                 </div>
                 <CardTitle className="text-xl">Автоматизация</CardTitle>
               </CardHeader>
@@ -95,7 +102,7 @@ const Index = () => {
       </section>
 
       {/* Program Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Программа ужина</h2>
@@ -107,7 +114,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
               <div className="flex items-start gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                   18:00
                 </div>
                 <div className="flex-1">
@@ -122,7 +129,7 @@ const Index = () => {
               </div>
 
               <div className="flex items-start gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-white font-bold text-lg">
                   18:30
                 </div>
                 <div className="flex-1">
@@ -137,7 +144,7 @@ const Index = () => {
               </div>
 
               <div className="flex items-start gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                   19:15
                 </div>
                 <div className="flex-1">
@@ -152,7 +159,7 @@ const Index = () => {
               </div>
 
               <div className="flex items-start gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-white font-bold text-lg">
                   20:00
                 </div>
                 <div className="flex-1">
@@ -171,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* Registration Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-orange-500">
+      <section className="py-20 bg-gradient-to-r from-sky-600 to-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
@@ -225,7 +232,7 @@ const Index = () => {
                   <Textarea id="message" placeholder="Расскажите о ваших интересах к nanoCAD" rows={3} />
                 </div>
                 
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white py-3 text-lg font-semibold">
+                <Button className="w-full bg-gradient-to-r from-sky-600 to-gray-900 hover:from-sky-700 hover:to-black text-white py-3 text-lg font-semibold">
                   Зарегистрироваться
                 </Button>
               </CardContent>
@@ -266,13 +273,13 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Социальные сети</h3>
               <div className="flex gap-4">
-                <Button variant="ghost" size="sm" className="text-white hover:text-blue-400">
+                <Button variant="ghost" size="sm" className="text-white hover:text-sky-400">
                   <Icon name="Facebook" size={20} />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-white hover:text-blue-400">
+                <Button variant="ghost" size="sm" className="text-white hover:text-sky-400">
                   <Icon name="Twitter" size={20} />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-white hover:text-blue-400">
+                <Button variant="ghost" size="sm" className="text-white hover:text-sky-400">
                   <Icon name="Linkedin" size={20} />
                 </Button>
               </div>
